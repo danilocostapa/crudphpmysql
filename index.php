@@ -21,10 +21,10 @@
             <a class="nav-link" href="index.php">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="pages/cadastro_user.php">Novo Usuário</a>
+            <a class="nav-link" href="?page=novo">Novo Usuário</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="pages/listar_user.php">Listar Usuários</a>
+            <a class="nav-link" href="?page=listar">Listar Usuários</a>
           </li>
         </ul>
       </div>
@@ -37,10 +37,10 @@
         <?php
         switch (@$_REQUEST["page"]) {
           case "novo":
-            include("cadastro_user.php");
+            include("pages/cadastro_user.php");
             break;
           case "listar":
-            include("listar_user.php");
+            include("pages/listar_user.php");
             break;
           default:
 
