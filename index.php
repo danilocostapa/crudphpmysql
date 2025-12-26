@@ -8,6 +8,10 @@
   <link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
+<?php
+include('config.php');
+?>
+
 <body>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
@@ -44,7 +48,7 @@
             break;
           default:
 
-            print("Bem vindo!");
+            print("<h1>Bem vindo!</h1>");
         }
 
         ?>
