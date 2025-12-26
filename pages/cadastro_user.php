@@ -1,6 +1,6 @@
 <h1>Cadastro de Usuários</h1>
 
-<form action="">
+<form action="?page=salvar" method="POST">
 
     <div class="mb-3">
         <label for="nome">Nome</label>
@@ -19,7 +19,11 @@
 
     <div class="mb-3">
         <label for="data-nascimento">Data de Nascimento</label>
-        <input type="date" name="data-nascimento" id="data-nascimento">
+        <input type="date" name="data-nascimento" id="data-nascimento" class="form-control">
+    </div>
+
+    <div class="mb-3">
+        <button type="submit" class="btn btn-primary">Enviar</button>
     </div>
 
 </form>
