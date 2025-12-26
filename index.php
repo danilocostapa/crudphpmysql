@@ -43,11 +43,16 @@ include('config.php');
           case "novo":
             include("pages/cadastro_user.php");
             break;
+
           case "listar":
             include("pages/listar_user.php");
             break;
-          default:
 
+          case "salvar":
+            include("api/salvar_user.php");
+            break;
+
+          default:
             print("<h1>Bem vindo!</h1>");
         }
 
